@@ -1,0 +1,16 @@
+<ul>
+                # list는 아까 뷰에서 만든거 그걸 뿌려주는거임.
+    {%  for item in list %}
+        <li>
+            <a href="/detail/{{ item.id }}">
+                 {{ item.title }}
+            </a>
+        </li>
+    {% endfor %}
+
+</ul>
+
+                # 데이터를 넣는 방법
+                #  1. 관리자사이트를 만들어놓고 등록
+                #  2 . sqlite를 만들어서 등록
+
