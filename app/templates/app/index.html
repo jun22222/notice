@@ -1,3 +1,24 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+<div class="row">
+  <div class="col-sm-12">.col-sm-4
+    <div class="list-group">
+        {% for item in list %}
+        <a href="/detail/{{ item.id }}" class="list-group-item">
+            {{ item.title }}
+        </a>
+        {% endfor %}
+
+     </div>
+   </div>
+</div>
+
+
+
 <ul>
                 # list는 아까 뷰에서 만든거 그걸 뿌려주는거임.
     {%  for item in list %}

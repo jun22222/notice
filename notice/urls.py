@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('index/', views.index),
     path('detail/<int:num>/', views.detail),
+    path('about/', views.about),
                  # kk detail 함수로 넘어갈때 인자로 넘어가게됨
           #1   내가 만든거 연결
 

@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'app',
+    'app',    # 모델 만들고나서 확인 이후 makemigration 이랑 migrate
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

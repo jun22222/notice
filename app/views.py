@@ -1,6 +1,15 @@
 from django.shortcuts import render
 from .models import Notice
 
+def about(request):
+    return render(request, 'app/about.html', {})
+          # 뷰 만들고 호출할 주소를 만들어야함 -> urls 파일 ㄱㄱ
+
+
+
+
+
+
 
 
 def index(request):
